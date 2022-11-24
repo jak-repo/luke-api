@@ -75,10 +75,11 @@ app.put('/api/todos/:id', (req, res) => {
 });
 
 app.get('/', (req,res) => {
+  console.log('v.1.0.1 hmm /api-docs');
   res.send(`<h1>API Running on port ${port}</h1>`);
 });
 
-console.log('v.1.0.1');
+
 
 app.listen(port, () => {
     console.log(`Server listening on the port::::::${port}`);
