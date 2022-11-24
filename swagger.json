@@ -13,7 +13,7 @@
         }
     },
     "schemes": ["http"],
-    "host": "localhost:3080",
+    "host": "localhost:443",
     "basePath": "/api",
     "paths" : {
         "/todos" : {

@@ -3,7 +3,7 @@ const randomId = require('random-id');
 const app = express(),
       bodyParser = require("body-parser"),
       fs = require('fs'),
-      port = process.env.PORT || 3080;
+      port = process.env.PORT || 443;
 
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
