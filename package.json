@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "api for todoapp",
   "main": "server.js",
-  "scripts": {
-    "test": "mocha"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
