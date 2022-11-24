@@ -5,6 +5,8 @@ const app = express(),
       fs = require('fs'),
       port = process.env.PORT || 443;
 
+app.use(express.static('public'))
+
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 const customCss = fs.readFileSync((process.cwd()+"/swagger.css"), 'utf8');
@@ -75,6 +77,8 @@ app.put('/api/todos/:id', (req, res) => {
 app.get('/', (req,res) => {
   res.send(`<h1>API Running on port ${port}</h1>`);
 });
+
+console.log('v.1.0.1');
 
 app.listen(port, () => {
     console.log(`Server listening on the port::::::${port}`);
